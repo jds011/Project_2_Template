@@ -4,6 +4,9 @@
 # ending that tells you how many pokemon you guessed right. 
 # question1 = input("What pokemon is this?")
 score = 0
+
+#since all your functions are so similar, it is worth considering writing just one function
+#that takes in user input and expected answer as parameters
 #questions 
 def question1(answer):
     if (answer == "Pikachu"):
