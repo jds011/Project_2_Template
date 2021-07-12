@@ -5,8 +5,7 @@
 # question1 = input("What pokemon is this?")
 score = 0
 
-#since all your functions are so similar, it is worth considering writing just one function
-#that takes in user input and expected answer as parameters
+#Since all your functions are so similar, what could you do to simplify things?
 #questions 
 def question1(answer):
     if (answer == "Pikachu"):
@@ -16,6 +15,7 @@ def question1(answer):
         return "You're correct"
     else:
         return "Wrong answer"
+#Your code is very well-organized and readable, so this isn't a big issue, but generally, functions are grouped together separately from the main code that calls the functions. 
 answer = input("What pokemon is this? It is a small yellow mouse and can use thunder attacks: ").capitalize()
 print(question1(answer))
 
@@ -131,9 +131,9 @@ print(question12(answer12))
 
 #function that checks your score and gives you an result
 def score_checker():
-    if (score > 3):
-        return "Results: You know your Pokemon decently"
-    elif (score == 5):
+    if (score > 3): 
+        return "Results: You know your Pokemon decently" 
+    elif (score == 5): #I'm wondering what would happen if you actually scored 5 points
         return "Results: You know your Pokemon really well"
     else:
         return "Results: You need to practice your Pokemon"
